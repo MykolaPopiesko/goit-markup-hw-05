@@ -119,7 +119,7 @@ a {
 
 .nav-link.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 
   display: block;
   width: 100%;
@@ -331,7 +331,7 @@ a {
 
   text-transform: uppercase;
   text-align: center;
-
+  font-size: 14px;
   color: var(--background-main-color);
   background-color: rgba(47, 48, 58, 0.8);
   transform: translateY(-100%);
@@ -634,6 +634,11 @@ a {
 .portfolio-thumb:hover .overlay {
   transform: translateY(-100%);
 }
+
+.portfolio-link:focus .overlay {
+  transform: translateY(-100%);
+}
+
 .portfolio-item {
   width: calc((100% - 60px) / 3);
 }
